@@ -1,0 +1,173 @@
+
+
+
+
+.nav-link {
+  margin-left: 1.5rem;
+  font-size: 1rem;
+  
+  font-weight: 500;
+}
+
+.navbar-brand {
+  font-weight: 800;
+}
+
+.navbar-brand,
+a:hover,
+li a.active {
+  color: #1abc9c !important;
+  border-bottom: 2px solid #1abc9c;
+}
+
+.footer-padding {
+  padding-bottom: 60px;
+}
+
+.footer {
+  position: sticky;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #1abc9c;
+}
+
+.footer p {
+  padding-top: 0.7em;
+  padding-bottom: 0.7em;
+  font-size: 16px;
+  color: #fff;
+}
+
+#home-pg-img {
+  width: 100%;
+  height: 500px;
+}
+
+.row {
+  text-align: center;
+}
+
+.customer-header-row,
+.customer-row {
+  padding: 1rem;
+  background-color: #dff9fb;
+  margin: 10px auto auto;
+  width: 70%;
+}
+
+.customer-header-row,
+.customer-row:hover {
+  background-color: #1abc9c;
+}
+
+.first-cust {
+  background-color: #dff9fb;
+}
+
+.btn {
+  background-color: #4aeecd;
+  box-shadow: 1px 2px #666;
+}
+
+.btn:active,
+.btn:focus,
+.btn:focus:active {
+  background-color: #1abc9c;
+  box-shadow: 0 2px #666;
+}
+.form-control:active,
+.form-control:focus,
+.form-control:focus:active {
+  box-shadow: none;
+}
+
+.btn:active {
+  background-color: #1abc9c;
+  transform: translate(1px, 2px);
+}
+
+.btn:hover {
+  background-color: #1abc9c;
+}
+
+.success {
+  text-align: center;
+  margin: 14% auto;
+  background-color: #4aeecd;
+  width: fit-content;
+  padding: 3rem;
+  border-radius: 5px;
+}
+.success-a {
+  text-decoration: none;
+  color: #fff;
+  font-size: large;
+}
+
+.container.about,
+.container.contact {
+  margin-top: 10%;
+  height: 100vh;
+}
+
+.transaction-form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+
+/* new */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.navbar
+{
+    width:100%;
+    white-space:nowrap;
+    background-color: #5E11A3;
+}
+.main_div
+{
+    width:100%;
+    height:100vh;
+    background-image:linear-gradient(to right, #8D54BF,#944BD3,#7A3DAF,#692C9F,#562284,#4B1C74);
+    clip-path: polygon(0% 0%,100% 0%,100% 100%,0% 80%);
+}
+.main_text
+{
+    color:white;
+    margin-top:120px;
+    font-family: 'JetBrains Mono', monospace;
+}
+.big-text
+{
+   
+    margin:20px 0;
+    color:white;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+@media(min-width:400px)
+{
+    .main_div
+    {
+        max-height:1000px;
+    }
+}
+.table
+{
+    border-collapse:collapse;
+    background-color:black;
+    box-shadow:0 10px 20px 0 rgba(0,0,0,0.03);
+    border-radius: 10px;
+    border-collapse:collapse;
+    table-layout:fixed;
+    
+    
+    font-weight:bold;
+    
+}

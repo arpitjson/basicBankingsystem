@@ -1,0 +1,28 @@
+<%- include('header'); -%>
+
+<div class="container" style="margin-top: 3%">
+  <h3 class="text-center">Select(Click) a customer to start a transaction</h3>
+  <div class="container customer-table table">
+    <div class="row customer-header-row" style="background-color: #1abc9c">
+      <div class="col">Customer Id</div>
+      <div class="col">Customer Name</div>
+      <div class="col">Balance Amount</div>
+    </div>
+    <% for( let i = 0; i < customers.length; i++ ) { %>
+    <form action="/customer" method="POST">
+      <div class="row customer-row" onclick="this.parentNode.submit()">
+        <input
+          type="hidden"
+          name="selectedCustomerName"
+          value="<%= customers[i].name %>"
+        />
+        <div class="col"><%= i+1 %></div>
+        <div class="col"><%= customers[i].name %></div>
+        <div class="col"><%= customers[i].balance %></div>
+      </div>
+    </form>
+    <% } %>
+  </div>
+</div>
+
+<%- include('footer'); -%>
