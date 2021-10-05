@@ -37,21 +37,17 @@ app.use(express.static("public"));
 
 app.get("/", (req, res) => {
   res.render("home", {
-    activeTab: "home",
-    homeStartingContent: homeStartingContent,
-    aboutContent: aboutContent,
-    contactContent: contactContent,
+    activeTab: "home"
   });
 });
 
 app.get("/about", (req, res) => {
-  res.render("about", { activeTab: "about", aboutContent: aboutContent });
+  res.render("about", { activeTab: "about" });
 });
 
 app.get("/contact", (req, res) => {
   res.render("contact", {
-    activeTab: "contact",
-    contactContent: contactContent,
+    activeTab: "contact"
   });
 });
 
